@@ -57,6 +57,14 @@
                         <img src="static/images/thumbs/03.jpg" alt="" />
                         <h3>Caption... blah blah blah</h3>
                       </a>
+                      {% for post in posts %}
+                      	<img src="{{post}}" alt="" />
+                        <h3>{{posts[post]}}</h3>
+
+
+                      {%endfor%}
+
+
                 </div>  
 
 							</section>
